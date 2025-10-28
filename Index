@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مرحبا بك — موقعي الشخصي</title>
+  <meta name="description" content="مرحبا بك في موقعي الشخصي. هنا أشارك نبذة عني، أعمالي، وطرق التواصـل. صفحة ثابتة، سريعة، وجاهزة للعرض على GitHub Pages." />
+  <meta name="keywords" content="موقع شخصي, سيرتي, معرض أعمال, تواصل" />
+  <meta name="author" content="اسمك هنا" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="مرحبا بك — موقعي الشخصي" />
+  <meta property="og:description" content="مرحبا بك في موقعي الشخصي. هنا أشارك نبذة عني، أعمالي، وطرق التواصـل." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ar_SA" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "اسمك هنا",
+    "url": "",
+    "sameAs": [],
+    "jobTitle": "مطور / منشئ محتوى",
+    "description": "نبذة قصيرة عنك، مهاراتك، وما تقدمه."
+  }
+  </script>
+
+  <style>
+    :root{
+      --bg:#071023;
+      --card:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      --muted:#99a6b3;
+      --accent:#60a5fa;
+      --glass: rgba(255,255,255,0.03);
+      --radius:12px;
+      font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: radial-gradient(1200px 400px at 10% 10%, rgba(96,165,250,0.06), transparent),
+                  linear-gradient(180deg, var(--bg), #041027);
+      color:#e6eef8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .wrap{
+      width:100%;
+      max-width:1100px;
+      display:grid;
+      grid-template-columns:1fr 380px;
+      gap:20px;
+      align-items:start;
+    }
+
+    .panel{
+      background:var(--card);
+      border-radius:var(--radius);
+      padding:28px;
+      box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+      border:1px solid rgba(255,255,255,0.02);
+    }
+
+    .hero{
+      padding:28px;
+      border-radius:10px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      display:flex;
+      gap:18px;
+      align-items:center;
+    }
+
+    .avatar{
+      width:88px;
+      height:88px;
+      border-radius:16px;
+      background:linear-gradient(135deg,var(--accent),#7dd3fc);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:#012;
+      font-size:28px;
+      box-shadow: 0 8px 24px rgba(96,165,250,0.08);
+    }
+
+    h1{
+      margin:0;
+      font-size:28px;
+      line-height:1.05;
+    }
+    p.lead{margin:8px 0 0;color:var(--muted)}
+
+    .content{
+      margin-top:18px;
+      line-height:1.6;
+      color:#dbeafc;
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+    .feature{
+      background:var(--glass);
+      padding:12px;
+      border-radius:10px;
+      font-size:14px;
+      color:var(--muted);
+    }
+
+    aside{
+      position:relative;
+    }
+    .card-aside{
+      padding:20px;
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      background:linear-gradient(90deg,var(--accent),#7dd3fc);
+      color:#042;
+      font-weight:700;
+      text-decoration:none;
+      text-align:center;
+    }
+    .muted{color:var(--muted);font-size:14px}
+
+    footer.small{margin-top:12px;color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media(max-width:920px){
+      .wrap{grid-template-columns:1fr; padding-bottom:28px}
+      .avatar{width:72px;height:72px;font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap" role="main">
+    <section class="panel">
+      <div class="hero">
+        <div class="avatar">م</div>
+        <div>
+          <h1>مرحبا بك</h1>
+          <p class="lead">هذا موقعي الشخصي — صفحة ثابتة سريعة، مناسبة للتجربة أو للعرض البسيط.</p>
+        </div>
+      </div>
+
+      <div class="content">
+        <h2 style="margin-top:18px">نبذة قصيرة</h2>
+        <p>أنا <strong>اسمك هنا</strong>. أعمل في (اكتب مهنتك أو اهتماماتك). هذه صفحة تجريبية مصممة لتكون سريعة، قابلة للفهرسة، وجاهزة للرفع إلى GitHub Pages. عدّل النصوص أعلاه لتناسبك.</p>
+
+        <h3 style="margin-top:14px">ماذا تحتوي هذه الصفحة</h3>
+        <ul>
+          <li>عنوان واضح &lt;title&gt; ووصف ميتا لتحسين الظهور في نتائج البحث.</li>
+          <li>تنسيق متجاوب يعمل على الجوال والكمبيوتر.</li>
+          <li>مقاطع قابلة للتعديل لعرض مهاراتك، أو روابط لمعارفك، أو معرض أعمال.</li>
+        </ul>
+
+        <div class="features" aria-hidden="false">
+          <div class="feature"><strong>سريع</strong> — صفحة ثابتة لا تحتاج خادم ديناميكي.</div>
+          <div class="feature"><strong>مجاني 100%</strong> — جهز للعمل على GitHub Pages.</div>
+          <div class="feature"><strong>مهيئ SEO</strong> — meta tags وstructured data جاهزة.</div>
+          <div class="feature"><strong>سهل التعديل</strong> — افتح الملف وعدّل النصوص فقط.</div>
+        </div>
+
+        <footer class="small">نصيحة: بعد رفع الملف، أدخل إلى <strong>Google Search Console</strong> وأضف عنوان موقعك لسرعة الفهرسة.</footer>
+      </div>
+    </section>
+
+    <aside class="panel card-aside">
+      <div>
+        <h3 style="margin:0 0 8px 0">تواصل سريع</h3>
+        <p class="muted">للحصول على تواصل مباشر ضع بريدك أو رابط حسابك.</p>
+        <a class="btn" href="mailto:بريدك@مثال.com">أرسل رسالة</a>
+      </div>
+
+      <div>
+        <h4 style="margin:6px 0">روابط مفيدة</h4>
+        <p class="muted" style="margin:6px 0">ارفع هذا الملف إلى مستودع جديد أو استبدل الموجود، ثم فعّل GitHub Pages من الإعدادات.</p>
+        <a class="btn" href="https://github.com" target="_blank" rel="noopener">اذهب إلى GitHub</a>
+      </div>
+
+      <div style="margin-top:6px">
+        <h4 style="margin:6px 0">معلومة تقنية</h4>
+        <p class="muted" style="margin:6px 0">لجعل Google يرى صفحتك بسرعة: أضف meta التحقق من Search Console داخل &lt;head&gt; ثم اطلب Indexing.</p>
+      </div>
+    </aside>
+  </main>
+</body>
+</html>
